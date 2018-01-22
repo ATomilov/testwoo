@@ -1,0 +1,317 @@
+.sidebar
+    width 20.416666666667%
+    margin-right 55px
+    display inline-block
+    vertical-align top
+    font-size 16px
+    +
+        .content
+            width 900px
+            display inline-block
+            vertical-align top
+
+.sidebar-menu
+    border 2px solid #92a8d1
+    border-bottom none
+    background #e5ecf4
+    position relative
+    margin-bottom 122px
+    word-wrap break-word
+    ul
+        margin 0
+        padding 0 28px 0 46px
+
+    li
+        list-style none
+        line-height: 28px;
+        &.current-cat
+            a
+                color $pink
+                border-bottom 1px solid $pink
+    a
+        color #212125
+        font-size 23px
+        transition-property color,border-color
+        transition-duration 0.4s
+        transition-timing-function ease
+        border-bottom-color transparent
+        display inline-block
+        vertical-align top
+        line-height 23px
+        word-break: break-all;
+        &:hover
+           color $pink
+           border-bottom 1px solid $pink
+    ul
+      li.cat-item:last-child
+        position relative
+        &:before
+          content ''
+          position absolute
+          bottom -72px
+          left: -48px;
+          sprite($s-sidebar-menu)
+
+.sidebar-menu__title
+    text-transform uppercase
+    border-top 2px solid #92a8d1
+    color #212125
+    margin 30px 0 0 0
+    padding 22px 28px 12px 28px
+    font-size: 22px
+
+
+
+.choice-color
+  width: 100%
+  .sidebar-menu
+    border-bottom: 2px solid #92a8d1
+    padding-bottom: 30px
+    &:before
+      display: none
+
+  &__title
+    text-transform uppercase
+    border-top 2px solid #92a8d1
+    color #212125
+    margin 30px 0 0 0
+    padding 22px 28px 17px 24px
+    font-size: 22px
+    &_next
+      border-top none
+    &_position
+      padding 6px 28px 13px 24px
+
+  &_white
+    background-color: #fff
+
+  &_bodily
+    background-color #e8be97
+
+  &_pink
+    background-color #dda2b7
+
+  &_purple
+    background-color #a86ed0
+
+  &_yellow
+    background-color #f7db00
+
+  &_orange
+    background-color #eb9800
+
+  &_red
+    background-color #c20710
+
+  &_brown
+    background-color #a17354
+
+  &_blue
+    background-color #9bcff3
+
+  &_green
+    background-color #25ad62
+
+  &_black
+    background-color #000000
+
+  &_black-white
+    background: linear-gradient(to bottom right, white 51%, black 50%)
+
+  &__all-colors
+    display block
+    padding-left 24px
+    text-align left
+    box-sizing: border-box
+    label
+      cursor pointer
+      user-select none
+
+  &__form
+    width 35px
+    height 35px
+    display inline-block
+    position relative
+    margin: 0 10px 14px 0px
+    input
+      position absolute
+      top: 50%
+      left: 50%
+      transform translate(-50%,-50%)
+
+  &__orientation
+    display: block
+    padding-left: 24px
+    label
+      display block
+      cursor pointer
+      margin-bottom 0
+      position relative
+      &:hover
+        small
+          color: #df5e5f
+          text-decoration: underline
+    small
+      display inline-block
+      color: #212125
+      font-family: "narrow-regular", "sans-serif"
+      font-size 22px
+      font-weight: 400
+      line-height: 30px
+      letter-spacing: 0.12px
+      vertical-align: top
+      padding-left 25px
+      user-select none
+
+  &__ready-wallpapers
+    display block
+    padding-left 24px
+    label
+      position relative
+      margin-bottom 6px
+    small
+      display: inline-block
+      color: #212125
+      font-family: "narrow-regular", "sans-serif"
+      font-size: 22px
+      font-weight: 400
+      line-height: 25px
+      letter-spacing: 0.12px
+      padding-left 25px
+      vertical-align: top
+      user-select none
+      cursor pointer
+
+  &__buttons
+    display block
+    text-align center
+
+    input.choice-color__buttons_apply
+      cursor: pointer
+      background-color: #92a8d1
+      color: #fff
+      padding: 7px 10px
+      display: inline-block
+      text-align center
+      font-family: "narrow-regular", "sans-serif"
+      font-size: 20px
+      font-weight: 400
+      line-height: 20px
+      max-width: 55%
+      width: 100%
+      border: none
+      margin-top: 9px
+      &:hover
+        border-bottom: none
+        background-color #6e8bc2
+
+    a.choice-color__buttons_reset-all
+      cursor: pointer
+      background-color: #9c9fa3
+      color: #fff
+      padding: 7px 10px
+      display: inline-block
+      text-align center
+      font-family: "narrow-regular", "sans-serif"
+      font-size: 20px
+      font-weight: 400
+      line-height: 20px
+      max-width: 55%
+      width: 100%
+      margin-top 13px
+      &:hover
+        border-bottom: none
+
+.checkbox-color
+  padding: 0
+  appearance: none
+  width: 17px
+  height: 17px
+  border: none
+  background-color: inherit
+  outline none
+  cursor: pointer
+
+  &:checked::before
+    content: ""
+    display: block
+    border: 1px solid #df5e5f;
+    pointer-events: none
+    width: 17px
+    height: 17px
+    background-image inline('checkbox-ok.png')
+    background-color #fff
+    position: absolute
+    background-repeat: no-repeat
+    background-position: center
+
+.checkbox-orientation
+  position: absolute
+  padding: 0
+  border: 1px solid #99aed3
+  appearance: none
+  width: 17px
+  height: 17px
+  background-color #fff
+  cursor: pointer
+  outline none
+  top: 4px
+  &_position
+    top: 6px
+
+  &:checked::before
+    content: ""
+    display: block
+    border: 1px solid #df5e5f;
+    pointer-events: none
+    width: 17px
+    height: 17px
+    background-image inline('checkbox-ok.png')
+    background-color #fff
+    position: absolute
+    background-repeat: no-repeat
+    background-position: center
+    margin: -1px 0 0 -1px
+
+.child-cats
+  padding 0
+  li
+    a.child-cats__link
+      font-family: "narrow-regular", "sans-serif"
+      font-size: 20px
+      font-weight: 400
+      line-height: 20px
+      color: #93a9d1
+      letter-spacing: 0.12px
+      border-bottom none
+      &:hover
+        color: #f15d5e
+        text-decoration: underline
+
+.current-cat
+  position relative
+  &__pseudo
+    position absolute
+    left: -23px
+    background-image inline('plus.png')
+    top: 2px
+    cursor pointer
+    width 17px
+    height 17px
+    text-align: center
+    background-color: #93a9d1
+    background-repeat: no-repeat
+    background-position: center
+    display none
+    &_background
+      background-image inline('minus.png')
+    &_visible
+      display inline-block
+
+.cat-item
+  position relative
+  .child-cats
+    display none
+    padding: 5px 28px 0 14px
+    &__visible
+      display block

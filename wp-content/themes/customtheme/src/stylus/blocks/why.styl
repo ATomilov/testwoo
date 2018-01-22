@@ -1,0 +1,91 @@
+.vc_row
+    .why
+        margin 5px -15px -10px
+
+.why
+    margin 0
+    font-size 0
+    background $eggplant
+    position relative
+    padding-top 65px
+    padding-bottom 4px    
+
+    &:before
+        top -5px
+
+    &:after
+        bottom -5px
+        transform: rotateX(180deg);
+        z-index 10
+
+    &:before
+        content ''
+        position absolute
+        left 0
+        right 0
+        height 9px
+        background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI5IiB3aWR0aD0iMzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI5IDgiPjx0aXRsZT5Bc3NldCAxPC90aXRsZT48cGF0aCBkPSJNMjYgNGExMy4xMiAxMy4xMiAwIDAgMS00LTEuOUExNS4zOCAxNS4zOCAwIDAgMCAxNC41IDAgMTUuMzggMTUuMzggMCAwIDAgNyAyLjEgMTMuMTIgMTMuMTIgMCAwIDEgMyA0YTExLjYxIDExLjYxIDAgMCAxLTMgLjM2VjhoMjlWNC4zNkExMS42MSAxMS42MSAwIDAgMSAyNiA0eiIgZmlsbD0iIzQ5MzE0NyIgZGF0YS1uYW1lPSJMYXllciAxIi8+PC9zdmc+Cg==') top left repeat-x
+
+.why__mobile-fix
+    position absolute
+    display block
+    left 0
+    right 0
+    height 2px
+    z-index 10
+
+    &._type_top
+        top -8px
+        background-color #ffffff
+
+    &._type_bottom
+        bottom -9px
+        background-color #eb5c62
+        z-index 999
+
+.why__item
+    display inline-block
+    vertical-align top
+    margin-bottom 65px
+    font-style normal
+    width 47.291666666667%
+    min-height 300px
+    background #92a8d1
+    word-wrap break-word
+
+    &:first-child
+        font-family: 'MintTypeRistrettoSlabProRegular', sans-serif
+        font-size 88px
+        line-height 1.1
+        color #fff
+        padding 25px 40px 20px
+        letter-spacing .01em
+        text-transform uppercase
+
+    &:not(:nth-of-type(2n))
+        margin-right 65px
+
+.why__col
+    display inline-block
+    vertical-align top
+    color #fff
+
+    &:first-child
+        width 54.4%
+
+    &:last-child
+        width 45.6%
+        padding: 32px 26px 10px 29px
+
+.why__title
+    color #443945
+    text-transform uppercase
+    font-family 'MyriadPro-Cond', sans-serif
+    font-size 26px
+    line-height: 1.2;
+    margin-bottom: 8px;
+
+.why__content
+    font-family 'MyriadPro-Cond', sans-serif
+    font-size 24px
+    line-height 29px

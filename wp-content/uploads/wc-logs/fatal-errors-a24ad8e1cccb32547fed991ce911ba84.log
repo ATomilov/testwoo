@@ -1,0 +1,12 @@
+2018-01-22T07:26:05+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in C:\OSPanel\domains\testwoo\wp-content\themes\customtheme\header-shop.php:27
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(688): require_once()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', true)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\customtheme\index.php(1): get_header('shop')
+#4 C:\OSPanel\domains\testwoo\wp-includes\template-loader.php(74): include('C:\\OSPanel\\doma...')
+#5 C:\OSPanel\domains\testwoo\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\testwoo\index.php(17): require('C:\\OSPanel\\doma...')
+#7 {main}
+  thrown
+

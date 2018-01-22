@@ -1,0 +1,129 @@
+html
+    min-width 1230px
+
+body
+    font-size 17px
+    font-family: 'narrow-regular', sans-serif;
+    background #FFF
+    color #212125
+    min-width 1230px
+    -webkit-font-smoothing antialiased
+    -webkit-text-size-adjust 100%
+    -moz-osx-font-smoothing grayscale
+
+img
+    max-width 100%
+    height auto
+    vertical-align middle
+    color #000
+
+.content:not(.composer-style)
+    font-size 0
+
+.container
+    max-width 1230px
+    margin auto
+    padding 0 15px
+
+._float_left
+    float left
+
+._float_right
+    float right
+
+._type_margin-negative
+    margin-top -10px
+
+.title
+    font-family: 'MintTypeRistrettoSlabProRegular', sans-serif;
+    text-align center
+    color $pink
+    text-transform uppercase
+    font-weight normal
+    font-size: 48px;
+    letter-spacing: .02em;
+    margin 0 0 30px 0
+    position relative
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom 15px
+    padding: 0 15px;
+    &:before
+        content ''
+        height 2px
+        position absolute
+        left 0
+        right 0
+        bottom 11px
+        background $pink
+    span
+        padding 0 40px
+        position relative
+        margin: auto;
+        display inline-block
+        vertical-align top
+        word-wrap: break-word;
+        background #fff
+        max-width 80%
+        &:after,
+        &:before
+            content ''
+            position absolute
+            bottom 11px
+            sprite($s-title)
+        &:after
+            right 0
+            transform: rotateY(180deg);
+        &:before
+            left 0
+
+.title__link
+    color #ff5d5e
+    transition all .5s
+    &:hover
+        color #f99192
+
+label
+    font-size 17px
+    margin-bottom 10px
+    display inline-block
+    vertical-align top
+
+textarea
+    height 110px
+    margin-bottom 17px
+
+input[type="text"],
+input[type="email"]
+    margin-bottom 20px
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"]
+    width 100%
+    font-size 17px
+    border 1px solid #cccccc
+    padding: 8px;
+    outline none
+    transition .3s
+    &:hover,
+    &:focus,
+    &:active
+        border-color #989898
+
+.woocommerce form .form-row abbr.required
+    text-decoration none
+
+.woocommerce form .form-row label
+    line-height inherit
+
+.ymaps-2-1-47-map.ymaps-2-1-47-i-ua_js_yes.ymaps-2-1-47-map-bg-ru.ymaps-2-1-47-islets_map-lang-ru:nth-child(2)
+    display none !important
+
+#s2id_billing_delivery_point a.select2-choice
+    width 100%
+
+div.wpcf7 img.ajax-loader
+    margin-top -10px

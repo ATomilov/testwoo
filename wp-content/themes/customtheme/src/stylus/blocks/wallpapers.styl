@@ -1,0 +1,110 @@
+.wallpapers
+    font-size 0
+    padding-left 0
+    padding-right 0
+
+.catalog
+    padding-bottom 25px
+
+.wallpapers__item
+    display inline-block
+    vertical-align top
+    font-size 16px
+    margin-bottom 60px
+    position relative
+    width 30%
+    color #FFF
+    min-height 280px
+    img
+        display block
+        width 100%
+    &:not(:nth-of-type(3n))
+        margin-right 5%
+    &:hover
+        .wallpapers__info
+            min-height 110px
+
+.badges
+    position absolute
+    left 0
+    top 0
+    z-index 10
+    img
+        width auto
+        display inline
+        
+.wallpapers__info-inner
+    display block
+    position relative
+    width 100%
+
+.wallpapers__info
+    background rgba(69, 53, 73, .8)
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    display table
+    table-layout fixed    
+    min-height 90px
+    padding: 15px 23px;
+    transition: all 0.3s ease-in-out;
+    height 1px
+
+
+.wallpapers__info-item
+    display table-cell
+    vertical-align middle
+    &:last-child
+        text-align right
+
+.wallpapers__link
+    color #FFF
+    font-size 18px
+    border-bottom 2px solid #b2acb1
+    transition-property color,border-color
+    transition-duration 0.4s
+    transition-timing-function ease
+    display: inline-block;
+    vertical-align: middle;
+    line-height: .8;
+    &:hover,
+    &:active,
+    &:focus
+        border-bottom-color transparent
+
+.wallpapers__title
+    text-transform uppercase
+    font-weight 700
+    font-size 24px
+    word-wrap break-word
+    width 100%
+    letter-spacing .01em
+.go-directory
+    color #FFF
+    font-family: 'MintTypeRistrettoSlabProRegular', sans-serif;
+    background $pink
+    margin: auto;
+    display: block;
+    max-width: 360px;
+    text-align: center;
+    margin -19px auto 59px
+    padding: 21px 24px 27px;
+    font-size: 37px;
+    transition .3s    
+    &:hover
+        background #e84243
+    &:focus
+        background #e23c3e
+    &:active
+        background #f14c4d
+    &:after
+        content ""
+        display inline-block
+        position relative
+        width 42px
+        height 29px
+        background-image url('../images/sprite.png')
+        background-position -210px -76px        
+        top 4px
+        right -11px

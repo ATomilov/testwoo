@@ -1,0 +1,167 @@
+.payment-shipping__item
+    display inline-block
+    vertical-align top
+    width 47.75%
+    &:not(:nth-of-type(2n))
+        margin-right 4.416666666667%
+    .btn
+        &:not(:last-child)
+            margin-right 24px
+    ul
+        padding 0
+        margin 0 0 25px 0
+    li
+        list-style none
+        font-size 17px
+        line-height: 1.4;
+        &:before
+            content '-'
+            margin-right 5px
+    a
+        font-size 17px
+
+p
+    
+    line-height: 1.4;
+    margin 10px 0
+
+.payment-shipping__row
+    ul
+        margin 0
+        padding 0
+    li
+        font-size 17px
+        list-style none
+        line-height: 1.4;
+
+.payment-shipping__title
+    text-transform uppercase
+    font normal 50px 'MintTypeRistrettoSlabProRegular', sans-serif
+    margin: 20px 0 15px;
+    +
+        p
+            margin-bottom 25px
+
+p.list
+    margin-bottom 0
+    +
+        p
+            margin-bottom 0
+
+.payment-shipping__help
+    background #e8eaec
+    margin-bottom 25px
+    padding 30px
+    padding-right: 80px;
+    &._after-ordering
+        padding 36px 30px
+    p
+        margin-bottom 0
+        &:first-child
+            margin 0
+
+.payment-shipping__help-title
+    text-transform uppercase
+    font-weight bold
+    margin-bottom 25px
+    font-size 18px
+
+
+.return-goods
+    font-size 16px
+    margin 65px 0 35px
+    background #fee5e4
+    padding 30px
+    ul
+        margin 0
+        padding 0
+    li
+        list-style none
+        font-size 17px
+        line-height: 1.4;
+
+.return-goods__title
+    font-weight normal
+    margin 0 0 25px 0
+    text-transform uppercase
+    font-weight bold
+    font-size: 18px;
+
+ul.payment-shipping__write-complaint-list
+    margin-bottom 48px
+
+.payment-shipping__item_popups
+    a
+        border-bottom 1px solid #806570
+        transition-property color,border-color
+        transition-duration 0.4s
+        transition-timing-function ease
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom 40px
+        outline none
+        &:hover,
+        &:active,
+        &:focus
+            border-bottom-color transparent
+    p
+        margin-bottom 0
+
+.woocommerce form .form-row-first,
+.woocommerce form .form-row-last,
+.woocommerce-page form .form-row-first,
+.woocommerce-page form .form-row-last
+    float: none;
+    width: 440px;
+
+.wc_payment_methods.payment_methods methods
+    display none 
+
+.woocommerce-checkout-payment.col-2
+    background none
+
+.form-row place-order
+    padding 0
+
+.col2-set._type_margin-top
+    margin-top 50px
+
+.btn-create-payment
+    float left
+    
+body .select2-container
+    .select2-choice
+        font-size 17px
+        border 1px solid #ccc
+        padding 10px 8px
+        line-height 1.1
+        outline 0
+        transition .3s
+        border-radius 0
+        color #000
+        .select2-arrow
+            top 50%
+            margin-top -7px
+            right 14px
+            width 9px
+            height 9px
+            border-left 1.5px solid #aaa
+            border-bottom 1.5px solid #aaa
+            -ms-transform rotate(-45deg)
+            transform rotate(-45deg)
+            b
+                display none
+    &.select2-dropdown-open
+        .select2-choice
+            .select2-arrow
+                -ms-transform rotate(135deg)
+                transform rotate(135deg)
+                top 23px
+                right 14px
+
+body .select2-container .select2-choice:active,.select2-container .select2-choice:focus,.select2-container .select2-choice:hover
+    border-color #989898
+
+body .select2-container-active,.select2-container-active .select2-choice,.select2-drop-active,.select2-drop-active .select2-choice,.select2-dropdown-open,.select2-dropdown-open .select2-choice
+    border-color #989898

@@ -1,0 +1,66 @@
+.header__menu
+    ul
+        margin 0
+        padding 0 0 0 65px
+        text-align right
+    li
+        display inline-block
+        vertical-align top
+        &:not(:last-child)
+            margin-right 17%
+        &:hover,
+        &.current-menu-item
+            a
+                color $pink
+                &:after
+                    background $pink
+    a
+        font-family: 'MintTypeRistrettoSlabProRegular', sans-serif;
+        font-size 37px
+        text-transform uppercase
+        letter-spacing: .01em
+        display block
+        position relative
+        padding-top 70px
+        text-align: center;
+        white-space: nowrap;
+        max-width: 210px;
+        min-width 73px
+        text-overflow: ellipsis;
+        overflow: hidden;
+        transition-property color,border-color
+        transition-duration 0.4s
+        transition-timing-function ease
+        padding-bottom: 10px;
+        &:before
+            content ''
+            position absolute
+            left 0
+            right 0
+            bottom 1.8em
+            margin auto
+        &:after
+            content ''
+            height 2px
+            position absolute
+            bottom 4px
+            left 0
+            right 0
+            margin 0 20%
+            background transparent
+            transition-property color, background
+            transition-duration 0.4s
+            transition-timing-function ease
+
+.header__menu_stock a
+    &:before
+        sprite($s-stock)
+
+.header__menu_wallpapers
+    a
+        &:before
+            sprite($s-wallpapers)
+
+.header__menu_payment-shipping a
+    &:before
+        sprite($s-payment-shipping)

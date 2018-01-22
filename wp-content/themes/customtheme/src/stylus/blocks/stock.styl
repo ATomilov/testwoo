@@ -1,0 +1,39 @@
+.stock
+    .wallpapers__info_top
+        position absolute
+        top 0
+        left 0
+        right 0
+        text-align center
+        color #FFF
+        font-size 49px
+        font-family: 'Lobster', cursive;
+        min-height: 90px;
+        padding 15px 5px
+    .wallpapers__info
+        padding: 10px 26px;
+        line-height: 1;
+    .wallpapers__item
+        &._new
+            > div
+                background rgba(110, 176, 155, .8)
+        &._discounts-20
+            > div
+                background rgba(241, 93, 94, .8)
+        &._last-copies
+            .wallpapers__info_top
+                font-size: 38px;
+                line-height: .9;
+                padding-top: 5px;
+            > div
+                background rgba(146, 168, 209, .8)
+        &._discounts-40
+            > div
+                background rgba(69, 53, 73, .8)
+        &._benefit
+            > div
+                background rgba(120, 37, 109, .8)
+    .wallpapers__link
+        border-bottom: 1px solid #fff;
+        &:hover
+            border-color transparent

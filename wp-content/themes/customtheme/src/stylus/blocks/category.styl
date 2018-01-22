@@ -1,0 +1,22 @@
+.wallpapers__category
+    .wallpapers__item
+        width 31.111111111111%
+        &:not(:nth-of-type(3n))
+            margin-right 3.333333333333%
+        &:hover
+            .wallpapers__info
+                min-height 80px
+        &:before
+            content ''
+            position absolute
+            left 0
+            top 0
+            z-index 10
+    .wallpapers__info
+        min-height 70px
+        padding: 8px 15px;
+    .wallpapers__link
+        font-size 15px
+        border-width 1px
+    .wallpapers__title
+        font-size 16px

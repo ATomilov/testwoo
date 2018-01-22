@@ -1,0 +1,33 @@
+.social-menu
+    font-size 0
+    margin 0
+    padding 0
+    overflow hidden
+    border 1px solid $blue
+    display inline-block
+    vertical-align top
+    a
+        float left
+        width 39px
+        height 33px
+        display block
+        position relative
+        &:hover
+            background rgba(168, 183, 224, 0.3)
+        &:not(:last-child)
+            border-right 1px solid $blue
+    img
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        margin auto
+        max-width: 65%;
+        height: auto;
+        
+.social-menu__title
+    color #92A8D1
+    font-size 18px
+    line-height: 2;
+    margin-right: 1em;

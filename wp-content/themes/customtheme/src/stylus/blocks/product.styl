@@ -1,0 +1,196 @@
+.social-menu_product
+    float right
+
+.product__btn-like
+    border none
+    cursor pointer
+    margin-right 25px
+
+
+.product__container
+    font-size 0
+
+.product__item-img
+    margin-bottom: 6px
+    img
+        display inline-block
+        vertical-align top
+
+.product__title
+    letter-spacing .005em
+    font-size: 23px
+    margin 5px 0px 25px 0
+
+.product__item-img
+    position relative
+    display inline-block
+    vertical-align top
+    outline none
+    &:before
+        content ''
+        sprite($s-zoom)
+        position absolute
+        bottom 4px
+        right 4px
+
+.product__item
+    position relative
+    margin-bottom 85px
+    display inline-block
+    width 280px
+    vertical-align top
+    font-size 17px
+    line-height 21px
+    &._type_horizontal
+        width 31.111111111111%
+    &:not(:nth-of-type(3n))
+        margin-right 29px
+    &:before
+        content ''
+        position absolute
+        left 0
+        top 0
+        z-index 10
+
+.alax-loader
+    display inline-block
+    width 18px
+    height 18px
+    background-image url(../images/loader.gif)
+
+.discount
+    .product__price
+        color #ff4d4d
+        margin: 8px 0 15px
+
+.product-items
+    font-size 0
+    margin-top 55px
+
+.product__price
+    font-weight 700
+    font-size: 30px
+    margin: 43px 0 15px
+    display: block
+
+.woocommerce a.button,
+.product__btn-buy
+    display inline-block
+    vertical-align top
+    min-width 165px
+    text-align center
+    font-size: 37px
+    font-family: 'MintTypeRistrettoSlabProRegular', sans-serif
+    line-height: .9
+    padding: 7px 5px 7px
+    border-radius 0
+
+.product__price_old
+    margin-top: 13px
+    display: block
+    span
+        text-decoration: line-through
+        
+.wp_wpmlike_btn
+    &.text
+        text-shadow none
+
+.wpm-like
+    display: inline-block
+    position: relative
+    vertical-align: middle
+    line-height: 1
+    margin: 0
+
+.wpmlike
+    display inline-block
+    position relative
+    vertical-align middle
+    line-height 1
+    margin 0
+    .counter
+        a
+            margin: 0
+            display: inline-block
+            border-radius: .25em
+            border: 1px solid #d3d3d3
+            vertical-align: middle
+            line-height: 1em
+            font-size: .75em
+            cursor: pointer
+            max-height: 25px
+            color: #777
+            background: #dfdfdf
+            box-shadow: 1px 1px 0 rgba(255,255,255,0.5) inset
+            text-shadow: 0 1px 0 rgba(255,255,255,0.5)
+            text-decoration: none
+            -webkit-transition: .25s
+            -moz-transition: .25s
+            -ms-transition: .25s
+            -o-transition: .25s
+            transition: .25s
+
+.wpmlike-default
+    .counter
+        a
+            padding 9px 21px
+            max-height 100%
+            min-width 195px
+            height 37px
+            border none
+            border-radius 0
+            box-shadow none
+            background #92a8d1
+            color #fff
+            text-shadow none
+            text-align center
+            font-size 17px
+            line-height 100%
+            &:hover
+                background #8daae0
+                color #fff
+                text-shadow none
+
+.wpmlike
+    .count-box
+        position: relative
+        display: inline-block
+        vertical-align: middle
+        text-align: center
+        text-decoration: none
+        background-color: #fff
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+        margin-left: .5em
+        line-height: 1em
+        margin-right 10px
+        padding 3px 8px
+        min-width auto
+        border 1px solid #92a8d1
+        border-radius 0
+        color #ff5d5e
+        font-size 13px
+        &:before
+            content: ''
+            width: .25em
+            height: .25em
+            position: absolute
+            border: 1px solid transparent
+            background: #fff
+            border-bottom-color: #898F9C
+            left: -.2125em
+            top: 50%
+            margin-top: -.2em
+            border-left-color: #898F9C
+            transform: rotate(45deg)
+            top 55%
+
+@media (min-width: 800px)
+    #payment
+        position absolute
+        top 0
+        right 100px
+    .woocommerce-checkout-review-order
+        min-height 400px
+        position relative

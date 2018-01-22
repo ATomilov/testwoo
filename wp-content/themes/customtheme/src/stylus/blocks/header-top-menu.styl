@@ -1,0 +1,35 @@
+.header-top-menu
+    font-size 0
+    display inline-block
+    vertical-align top
+    margin-top 5px
+    display none
+    max-width 70%
+    ul
+        padding 0
+        margin 0
+    li
+        display inline-block
+        vertical-align top
+        list-style none
+        &:not(:last-child)
+            margin-right 15px
+        &.current-menu-item
+            a
+                color $pink
+                border-color #f89999
+    a
+        font-size 18px
+        text-transform uppercase
+        color $eggplant
+        display inline-block
+        vertical-align top
+        line-height: .8;
+        transition-property color,border-color
+        transition-duration 0.4s
+        transition-timing-function ease
+        border-bottom 2px solid transparent
+        font-weight 700
+        &:hover
+            border-bottom 2px solid #f89999
+            color $pink

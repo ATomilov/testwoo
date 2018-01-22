@@ -1,0 +1,35 @@
+.breadcrumbs
+    margin-bottom 25px
+    ul
+        padding 0
+        margin 0
+        font-size 0
+    li
+        display inline-block
+        vertical-align top
+        font-size 15px
+        &:not(:last-child)
+            &:after
+                content '/'
+                font-size 15px
+                color: #212125;
+                margin: 0 5px;
+                position: relative;
+                top: -2px;
+            a
+                border-color #727274
+                &:hover
+                    border-color transparent
+        &:last-child
+            line-height: 1.1;
+    a
+        font-size 16px
+        color #212125
+        letter-spacing .005em
+        line-height: .9;
+        display: inline-block;
+        vertical-align: top;
+        transition-property color,border-color
+        transition-duration 0.4s
+        transition-timing-function ease
+        border-bottom 1px solid transparent

@@ -1,0 +1,60 @@
+.your-city
+    overflow hidden
+
+.your-city-info
+    .mfp-close
+        display none
+
+.your-city-info__item    
+    display inline-block
+    vertical-align top
+    background #fff
+    margin-top 37px
+    padding 12px
+    color #212125
+    font-size 0
+    min-width 414px
+    opacity 99
+
+.your-city-info__btn,.your-city-info__city
+    font-size 19px
+    display inline-block
+    vertical-align top
+
+.your-city-info__city
+    margin-right 25px
+    margin-top 9px
+
+.your-city-info__btn
+    color #fff
+    background #92a8d1
+    padding 7px 16px
+    transition .3s
+    margin-left 12px
+    &:active
+        background #607bad
+    &.disabled-btn
+        background #a4a7ab
+        cursor default
+
+.your-city-info__btn:focus,.your-city-info__btn:hover
+    background #758ebd
+
+.your-city-info__btn.disabled-btn:active,.your-city-info__btn.disabled-btn:focus,.your-city-info__btn.disabled-btn:hover
+    background #a4a7ab
+
+.your-city-info__change-city
+    display none
+    margin-top 15px
+
+.select2-drop
+    input[type=text]
+        border none
+        border-top 1px solid #989898
+        border-bottom 1px solid #989898
+        transition none
+        padding 9px!important
+        font-family narrow-regular,sans-serif
+        margin-bottom 0
+        background 0 0
+        color #212125
