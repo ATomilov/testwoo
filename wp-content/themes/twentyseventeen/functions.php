@@ -584,3 +584,49 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
+
+function new_loop_shop_per_page( $cols ) {
+	// $cols contains the current number of products per page based on the value stored on Options -> Reading
+	// Return the number of products you wanna show per page.
+	$cols = 5;
+	return $cols;
+}
+
+function enqueue_styles() {
+	wp_enqueue_style( 'shop-override', get_template_directory_uri() . '/assets/css/shop-override.css' );
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css' );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
+
+function my_custom_sidebar() {
+	register_sidebar(
+		array (
+			'name' => __( 'Left', 'twentyseventeen' ),
+			'id' => 'custom-left-side-bar',
+			'description' => __( 'Left Sidebar', 'twentyseventeen' ),
+			'before_widget' => '<div class="widget-area">',
+			'after_widget' => "</div>",
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+}
+add_action( 'widgets_init', 'my_custom_sidebar' );
+
+add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
+
+function iconic_cart_count_fragments( $fragments ) {
+
+	$fragments['a.cart-header'] = '<a class="cart-header" href="' . wc_get_cart_url() . '"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (' . WC()->cart->get_cart_contents_count() . ')</a>';
+
+	return $fragments;
+
+}
+
+function enqueue_scripts() {
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js' );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
+

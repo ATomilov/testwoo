@@ -28,12 +28,16 @@
 			?>
 				<p class="site-description"><?php echo $description; ?></p>
 			<?php endif; ?>
-			<a class="header-top__cart header__link" href="<?php echo WC()->cart->get_cart_url(); ?>">Корзина (<?php echo WC()->cart->cart_contents_count; ?>)</a>
+
+
 		</div><!-- .site-branding-text -->
 
 		<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
 		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
 	<?php endif; ?>
-
+        <div class="cart-container">
+            <a class="cart-header" href="<?php echo wc_get_cart_url(); ?>"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (<?php echo WC()->cart->cart_contents_count; ?>)</a>
 	</div><!-- .wrap -->
+
+    </div>
 </div><!-- .site-branding -->
