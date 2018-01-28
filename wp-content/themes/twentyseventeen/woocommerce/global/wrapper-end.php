@@ -25,7 +25,6 @@ $template = get_option( 'template' );
 switch ( $template ) {
 	case 'twentyeleven' :
 		echo '</div>';
-		get_sidebar( 'shop' );
 		echo '</div>';
 		break;
 	case 'twentytwelve' :

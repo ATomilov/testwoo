@@ -18,7 +18,9 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
+<title><?php if ( is_shop() ) echo woocommerce_page_title();
+else echo wp_get_document_title();?>
+</title>
 <?php wp_head(); ?>
 </head>
 
@@ -55,3 +57,5 @@
 
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
+            <?php if ( is_archive() )
+                get_sidebar('shop');?>

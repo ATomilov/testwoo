@@ -19,8 +19,20 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
 get_header( 'shop' ); ?>
+
+<div id="myModal" class="modal">
+    <div class="modal-content-container">
+        The product has been added to cart!
+    </div>
+</div>
+
+<div class="modal showmore-product">
+    <div class="modal-content-container showmore-product">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content"></div>
+    </div>
+</div>
 
 <?php
 
@@ -34,6 +46,7 @@ get_header( 'shop' ); ?>
 		 * @hooked WC_Structured_Data::generate_website_data() - 30
 		 */
 		do_action( 'woocommerce_before_main_content' );
+//get_sidebar('shop');
 	?>
 
     <header class="woocommerce-products-header">

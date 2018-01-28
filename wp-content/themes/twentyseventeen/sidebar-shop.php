@@ -7,21 +7,12 @@
  * @since Fruitful theme 1.0
  */
 ?>
-<div id="secondary" class="widget-area" role="complementary">
-	<?php do_action( 'before_sidebar' ); ?>
-	<?php if ( ! dynamic_sidebar( 'custom-left-side-bar' ) ) : ?>
+<?php if ( is_active_sidebar( 'custom-left-side-bar' ) && is_archive() ) : ?>
 
-		<aside id="woocommerce_product_search-2" class="widget woocommerce widget_product_search">
-			<h3 class="widget-title">Search Products</h3>
-			<?php get_product_search_form(); ?>
-		</aside>
-		<aside id="woocommerce_product_categories-4" class="widget woocommerce widget_product_categories">
-			<h3 class="widget-title">Product Categories</h3>
-			<?php
-			$args = array('hierarchical' => true);
-			the_widget('WC_Widget_Product_Categories', $args);
-			?>
-		</aside>
+    <div id="custom-left-side-bar" class="sidebar">
 
-	<?php endif; // end sidebar widget area ?>
-</div><!-- #secondary .widget-area -->
+		<?php dynamic_sidebar( 'custom-left-side-bar' ); ?>
+
+    </div>
+
+<?php endif; ?>

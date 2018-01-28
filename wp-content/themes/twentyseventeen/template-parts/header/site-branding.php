@@ -36,7 +36,7 @@
 		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
 	<?php endif; ?>
         <div class="cart-container">
-            <a class="cart-header" href="<?php echo wc_get_cart_url(); ?>"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (<?php echo WC()->cart->cart_contents_count; ?>)</a>
+            <a class="cart-header" href="<?php echo wc_get_cart_url(); ?>" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (<?php echo WC()->cart->cart_contents_count; ?>)</a>
 	</div><!-- .wrap -->
 
     </div>

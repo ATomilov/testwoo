@@ -30,13 +30,18 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php post_class(); ?>>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        The product has been added to cart!
+    </div>
+</div>
+<li <?php post_class(); ?> data-productid="<?php the_ID();?>">
     <img class="product-image-on-shop" src="<?php the_post_thumbnail_url();?>" data-alt-src="<?php echo $gallery_image_link;?>" alt="">
-    <div class="wallpapers__info">
-        <div class="wallpapers__info-item wallpapers__title"><?php echo the_title(); ?></div>
-        <div class="wallpapers__info-item">
-            <a class="wallpapers__link" href="<?php the_permalink();?>" target="_blank">Show more</a>
+    <div class="product-shop-info">
+        <div class="product-shop-info-item product-shop-title"><?php echo the_title(); ?></div>
+        <div class="product-shop-info-item">
+            <a class="product-shop-link" href="<?php the_permalink();?>" target="_blank">Show more</a>
         </div>
     </div>
-	<?php woocommerce_template_loop_add_to_cart(); ?>
+    <a href="" class="button test-add-to-cart">Add to cart</a>
 </li>

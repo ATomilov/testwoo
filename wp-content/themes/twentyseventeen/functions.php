@@ -585,14 +585,12 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
-add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 
 function new_loop_shop_per_page( $cols ) {
-	// $cols contains the current number of products per page based on the value stored on Options -> Reading
-	// Return the number of products you wanna show per page.
 	$cols = 5;
 	return $cols;
 }
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 
 function enqueue_styles() {
 	wp_enqueue_style( 'shop-override', get_template_directory_uri() . '/assets/css/shop-override.css' );
@@ -606,7 +604,7 @@ function my_custom_sidebar() {
 			'name' => __( 'Left', 'twentyseventeen' ),
 			'id' => 'custom-left-side-bar',
 			'description' => __( 'Left Sidebar', 'twentyseventeen' ),
-			'before_widget' => '<div class="widget-area">',
+			'before_widget' => '<div id="%1$s" class="side widget %2$s">',
 			'after_widget' => "</div>",
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
@@ -615,18 +613,60 @@ function my_custom_sidebar() {
 }
 add_action( 'widgets_init', 'my_custom_sidebar' );
 
-add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
 
 function iconic_cart_count_fragments( $fragments ) {
 
-	$fragments['a.cart-header'] = '<a class="cart-header" href="' . wc_get_cart_url() . '"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (' . WC()->cart->get_cart_contents_count() . ')</a>';
+	$fragments['a.cart-header'] = '<a class="cart-header" href="' . wc_get_cart_url() . '" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (' . WC()->cart->get_cart_contents_count() . ')</a>';
 
 	return $fragments;
 
 }
+add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
 
 function enqueue_scripts() {
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js' );
+	wp_localize_script( 'main', 'twAjaxAddToCart', array(
+		'ajaxurl' => admin_url( 'admin-ajax.php' )
+	));
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
+add_action('wp_ajax_twAddToCart', 'ajax_twAddToCart');
+add_action('wp_ajax_nopriv_twAddToCart', 'ajax_twAddToCart');
+
+function ajax_twAddToCart() {
+	$product_id  = intval( $_POST['data_productid'] );
+	WC()->cart->add_to_cart($product_id);
+	echo WC()->cart->cart_contents_count;
+	wp_die();
+}
+
+add_action('wp_ajax_twGetProductContent', 'ajax_twGetProductContent');
+add_action('wp_ajax_nopriv_twGetProductContent', 'ajax_twGetProductContent');
+
+function ajax_twGetProductContent() {
+	$product_id  = intval( $_POST['data_productid'] );
+	echo get_template_part('./template-parts/content-product-modal');
+	wp_die();
+}
+
+//remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+//add_action( 'woocommerce_single_product_summary', 'woocommerce_template_loop_add_to_cart', 30 );
+
+//remove_action( 'woocommerce_before_main_content', 'output_content_wrapper', 10);
+
+function custom_output_content_wrapper() { ?>
+    <div class="wrap <?php if ( is_archive() ) echo 'shop-page';?>">
+        <div id="primary" class="content-area twentyseventeen">
+            <main id="main" class="site-main" role="main">
+	<?php
+}
+
+function change_output_content_wrapper(){
+	if ( 'twentyseventeen' == get_template() ) {
+		remove_action( 'woocommerce_before_main_content', array( 'WC_Twenty_Seventeen', 'output_content_wrapper' ), 10 );
+		add_action( 'woocommerce_before_main_content', 'custom_output_content_wrapper', 10 );
+	}
+}
+
+add_action( 'woocommerce_before_main_content', 'change_output_content_wrapper', 5 );
