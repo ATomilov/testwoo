@@ -80,3 +80,185 @@ Stack trace:
 #6 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
 #7 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_temp
 
+2018-01-29T09:29:31+00:00 CRITICAL Uncaught Error: Call to undefined function is_type() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\woocommerce\content-product.php:46
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-core-functions.php(179): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\woocommerce\archive-product.php(100): wc_get_template_part('content', 'product')
+#3 C:\OSPanel\domains\testwoo\wp-includes\template-loader.php(74): include('C:\\OSPanel\\doma...')
+#4 C:\OSPanel\domains\testwoo\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#5 C:\OSPanel\domains\testwoo\index.php(17): require('C:\\OSPanel\\doma...')
+#6 {main}
+  thrown
+
+2018-01-29T09:48:30+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:17
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(653): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-01-29T09:48:40+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:17
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(653): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-01-29T09:48:44+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:17
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(653): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-01-29T09:56:19+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:26
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include()
+#1 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-template-functions.php(995): wc_get_template('single-product/...')
+#2 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(27): do_action('woocommerce_bef...')
+#6 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#7 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_temp
+
+2018-01-29T09:56:39+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:26
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include()
+#1 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-template-functions.php(995): wc_get_template('single-product/...')
+#2 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(27): do_action('woocommerce_bef...')
+#6 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#7 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_temp
+
+2018-01-29T09:57:09+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:26
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include()
+#1 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-template-functions.php(995): wc_get_template('single-product/...')
+#2 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(27): do_action('woocommerce_bef...')
+#6 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#7 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_temp
+
+2018-01-29T09:58:23+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:26
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include()
+#1 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-template-functions.php(995): wc_get_template('single-product/...')
+#2 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(27): do_action('woocommerce_bef...')
+#6 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#7 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_temp
+
+2018-01-29T09:58:51+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:26
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include()
+#1 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-template-functions.php(995): wc_get_template('single-product/...')
+#2 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): woocommerce_show_product_sale_flash('')
+#3 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(27): do_action('woocommerce_bef...')
+#6 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#7 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_temp
+
+2018-01-29T09:59:18+00:00 CRITICAL Uncaught Error: Call to a member function get_rating_count() on null in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\templates\single-product\rating.php:29
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include()
+#1 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-template-functions.php(939): wc_get_template('single-product/...')
+#2 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): woocommerce_template_single_rating('')
+#3 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(45): do_action('woocommerce_sin...')
+#6 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#7 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_t
+
+2018-01-29T10:27:19+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:24
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(653): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-01-29T11:20:09+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on null in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-template-functions.php:1008
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(22): woocommerce_template_single_add_to_cart()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#3 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(653): get_template_part('./template-part...')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#6 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_act
+
+2018-01-29T12:44:04+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\templates\loop\sale-flash.php:26
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include()
+#1 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-template-functions.php(788): wc_get_template('loop/sale-flash...')
+#2 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(23): woocommerce_show_product_loop_sale_flash()
+#3 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#5 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#6 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(653): get_template_part('./template-part...')
+#7 C:\OSPanel\domains\tes
+
+2018-01-29T12:44:07+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\templates\loop\sale-flash.php:26
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include()
+#1 C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-template-functions.php(788): wc_get_template('loop/sale-flash...')
+#2 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(23): woocommerce_show_product_loop_sale_flash()
+#3 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#5 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#6 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(653): get_template_part('./template-part...')
+#7 C:\OSPanel\domains\tes
+
+2018-01-29T13:09:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_price_to_display(), 0 passed in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php on line 15 and at least 1 expected in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-product-functions.php:950
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(15): wc_get_price_to_display()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#3 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(653): get_template_part('./template-part...')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#6 C:\OSPanel\doma
+
+2018-01-29T13:09:39+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_price_to_display(), 0 passed in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php on line 15 and at least 1 expected in C:\OSPanel\domains\testwoo\wp-content\plugins\woocommerce\includes\wc-product-functions.php:950
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php(15): wc_get_price_to_display()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#3 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(653): get_template_part('./template-part...')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#6 C:\OSPanel\doma
+

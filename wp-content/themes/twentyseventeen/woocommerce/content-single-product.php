@@ -23,6 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php
+//ob_start();
 	/**
 	 * woocommerce_before_single_product hook.
 	 *
@@ -78,5 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 
 </div><!-- #product-<?php the_ID(); ?> -->
-
+<?php //$out1 = ob_get_contents();
+//ob_end_clean();
+//var_dump($out1);?>
 <?php do_action( 'woocommerce_after_single_product' ); ?>

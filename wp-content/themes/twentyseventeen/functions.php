@@ -637,17 +637,27 @@ add_action('wp_ajax_nopriv_twAddToCart', 'ajax_twAddToCart');
 function ajax_twAddToCart() {
 	$product_id  = intval( $_POST['data_productid'] );
 	WC()->cart->add_to_cart($product_id);
-	echo WC()->cart->cart_contents_count;
-	wp_die();
+	$cart_count = WC()->cart->cart_contents_count;
+	if ( $cart_count ) :
+        wp_send_json_success( $cart_count );
+	else :
+        wp_send_json_error();
+	endif;
 }
 
 add_action('wp_ajax_twGetProductContent', 'ajax_twGetProductContent');
 add_action('wp_ajax_nopriv_twGetProductContent', 'ajax_twGetProductContent');
 
 function ajax_twGetProductContent() {
-	$product_id  = intval( $_POST['data_productid'] );
-	echo get_template_part('./template-parts/content-product-modal');
-	wp_die();
+    ob_start();
+	get_template_part('./template-parts/content-product-modal');
+	$result = ob_get_contents();
+    ob_end_clean();
+	if ( $result ) :
+        wp_send_json_success( $result );
+	else :
+        wp_send_json_error();
+	endif;
 }
 
 //remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );

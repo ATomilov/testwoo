@@ -17,14 +17,18 @@ jQuery(document).ready(function($) {
                 data_productid: data_productid
             },
             success: function(response) {
-                $('#myModal').fadeIn(500);
-                $('.cart-header').html('<i class="fa fa-shopping-cart" aria-hidden="true"></i> (' + response + ')');
-                $("#myModal").delay(1000).fadeOut();
+                if ( response['success'] ) {
+                    $('#myModal').fadeIn(500);
+                    $('.cart-header').html('<i class="fa fa-shopping-cart" aria-hidden="true"></i> (' + response['data'] + ')');
+                    $('#myModal').delay(1000).fadeOut();
+                }
+                else {
+                    alert("Error with add to cart")
+                }
             },
             error: function(response) {
-                alert("Error");
+                alert("Error with add to cart request");
             }
-
         });
     });
     $('.product-image-on-shop').click(function (e) {
@@ -37,13 +41,17 @@ jQuery(document).ready(function($) {
                 data_productid: data_productid
             },
             success: function(response) {
-                $('.modal-content-container.showmore-product > .modal-content').html(response);
-                $('.modal.showmore-product').fadeIn(500);
+                if ( response['success'] ) {
+                    $('.modal-content-container.showmore-product > .modal-content').html(response['data']);
+                    $('.modal.showmore-product').fadeIn(500);
+                }
+                else {
+                    alert("Error with show quick view product")
+                }
             },
             error: function(response) {
-                alert("Error");
+                alert("Error with show quick view request");
             }
-
         });
 
     });

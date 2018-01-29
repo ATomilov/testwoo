@@ -43,5 +43,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             <a class="product-shop-link" href="<?php the_permalink();?>" target="_blank">Show more</a>
         </div>
     </div>
-    <a href="" class="button test-add-to-cart">Add to cart</a>
+    <?php if ( ! $product->is_type( 'variable' ) ) : ?>
+        <a href="" class="button test-add-to-cart">Add to cart</a>
+    <?php endif;?>
 </li>
