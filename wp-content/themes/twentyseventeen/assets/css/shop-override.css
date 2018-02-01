@@ -95,3 +95,21 @@ a.product-shop-link:hover {
 .product-image-on-shop.quick-view:hover {
     pointer-events: none;
 }
+.options-of-product {
+    width: 30%;
+    margin: 0 auto;
+}
+.options-of-product .input-text.qty.text {
+    width: 18%;
+    display: inline-block;
+    float: left;
+}
+.options-of-product button {
+    display: inline-block;
+}
+.product-quick-view-info-price {
+    margin-bottom: 15px;
+}
+.options-of-product a.reset_variations {
+    display: none!important;
+}

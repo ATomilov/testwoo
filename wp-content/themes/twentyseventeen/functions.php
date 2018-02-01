@@ -595,6 +595,8 @@ add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 function enqueue_styles() {
 	wp_enqueue_style( 'shop-override', get_template_directory_uri() . '/assets/css/shop-override.css' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css' );
+	wp_enqueue_style( 'fbox', get_template_directory_uri() . '/assets/css/jquery.fancybox.css' );
+    wp_enqueue_script( 'fboxJs', get_theme_file_uri( '/assets/js/jquery.fancybox.js' ), array( 'jquery' ) );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 
