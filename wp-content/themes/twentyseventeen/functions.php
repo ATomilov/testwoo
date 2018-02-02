@@ -633,6 +633,13 @@ function enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
+add_action('wp_ajax_twGetValuesAttributes', 'ajax_twGetValuesAttributes');
+add_action('wp_ajax_nopriv_twGetValuesAttributes', 'ajax_twGetValuesAttributes');
+
+function ajax_twGetValuesAttributes() {
+    $product_quick_show_select_values = $_POST['data_attributesSelectValues'];
+}
+
 add_action('wp_ajax_twAddToCart', 'ajax_twAddToCart');
 add_action('wp_ajax_nopriv_twAddToCart', 'ajax_twAddToCart');
 

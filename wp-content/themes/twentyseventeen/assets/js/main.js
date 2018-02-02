@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+    var options = [];
     $('img.product-image-on-shop').mouseover(function () {
         var $this = $(this);
         var newSource = $this.attr('data-alt-src');
@@ -92,6 +93,9 @@ jQuery(document).ready(function($) {
     //         $('.summary.entry-summary .test-add-to-cart').css('display', 'inline-block');
     //     }
     // });
-    $('body').find('select[name=options-of-product]').each()
+    $('body').on('change', '.available-options-of-product', function () {
+       alert(this.value);
+       // alert($('.available-options-of-product').length);
+    });
 });
 

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="955b96ea-5359-4a3c-b54e-f77b487d075b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/css/shop-override.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/css/shop-override.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/content-product-modal.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/content-product-modal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/woocommerce/content-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/woocommerce/content-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/woocommerce/content-single-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/woocommerce/content-single-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/wc-logs/fatal-errors-a24ad8e1cccb32547fed991ce911ba84.log" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/fatal-errors-a24ad8e1cccb32547fed991ce911ba84.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +18,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1321">
-              <caret line="715" lean-forward="true" selection-start-line="715" selection-end-line="715" />
+            <state relative-caret-position="301">
+              <caret line="639" column="78" selection-start-line="639" selection-start-column="78" selection-end-line="639" selection-end-column="78" />
               <folding>
                 <element signature="n#custom_output_content_wrapper#0;n#!!top" />
                 <element signature="n#change_output_content_wrapper#0;n#!!top" />
@@ -36,8 +31,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
+            <state relative-caret-position="1491">
+              <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -60,20 +55,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content-single-product.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="content-single-product.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/woocommerce/content-single-product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="374">
               <caret line="76" column="44" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content-product-modal.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="content-product-modal.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/content-product-modal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1241">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="464">
+              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -99,7 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>class=&quot;wrap&quot;</find>
       <find>output_content_wrapper</find>
       <find>&lt;div class=&quot;wrap</find>
       <find>class=&quot;site-content&quot;</find>
@@ -129,6 +123,7 @@
       <find>$product</find>
       <find>data-currentvariationid</find>
       <find>twAddToCart</find>
+      <find>Error with show quick view product</find>
     </findStrings>
     <replaceStrings>
       <replace>close-modal</replace>
@@ -154,10 +149,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/quick-show-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/woocommerce/content-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/woocommerce/content-single-product.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/css/shop-override.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/content-product-modal.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/main.js" />
       </list>
     </option>
   </component>
@@ -310,12 +305,12 @@
       <workItem from="1517473820896" duration="17764000" />
       <workItem from="1517503088707" duration="6058000" />
       <workItem from="1517509307490" duration="86000" />
-      <workItem from="1517549130111" duration="22064000" />
+      <workItem from="1517549130111" duration="26846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145419000" />
+    <option name="totallyTimeSpent" value="150201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -665,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/woocommerce/content-single-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="76" column="44" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/css/shop-override.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -679,17 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1321">
-          <caret line="715" lean-forward="true" selection-start-line="715" selection-end-line="715" />
+        <state relative-caret-position="301">
+          <caret line="639" column="78" selection-start-line="639" selection-start-column="78" selection-end-line="639" selection-end-column="78" />
           <folding>
             <element signature="n#custom_output_content_wrapper#0;n#!!top" />
             <element signature="n#change_output_content_wrapper#0;n#!!top" />
@@ -699,8 +680,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/content-product-modal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1241">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="464">
+          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1491">
+          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/woocommerce/content-single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="76" column="44" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="44" />
         </state>
       </provider>
     </entry>
