@@ -36,7 +36,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     </div>
 </div>
 <li <?php post_class(); ?> data-productid="<?php the_ID();?>">
-    <img class="product-image-on-shop" src="<?php the_post_thumbnail_url();?>" data-alt-src="<?php echo $gallery_image_link;?>" alt="">
+    <img class="product-image-on-shop" src="<?php the_post_thumbnail_url();?>" data-alt-src="<?php echo $gallery_image_link;?>" data-main-src="<?php the_post_thumbnail_url();?>" alt="">
     <div class="product-shop-info">
         <div class="product-shop-info-item product-shop-title"><?php echo the_title(); ?></div>
         <div class="product-shop-info-item">

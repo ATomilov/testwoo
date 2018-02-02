@@ -638,10 +638,39 @@ add_action('wp_ajax_nopriv_twAddToCart', 'ajax_twAddToCart');
 
 function ajax_twAddToCart() {
 	$product_id  = intval( $_POST['data_productid'] );
-	WC()->cart->add_to_cart($product_id);
+	$product_id_quick_show = intval( $_POST['data_productQuickShowid'] );
+	$product_id_single_page = intval( $_POST['data_productSinglePageId'] );
+	$product_variation_id = intval( $_POST['data_productVariationId'] );
+	$product_quantity = intval( $_POST['data_quantityCurrentProduct'] );
+	$possible = true;
+	if ( $product_id_quick_show ) :
+        $current_product = wc_get_product( $product_id_quick_show );
+	    if ( $current_product->is_type( 'variable' ) && $product_variation_id && $product_quantity) :
+            WC()->cart->add_to_cart( $product_id_quick_show, $product_quantity, $product_variation_id );
+	    else :
+            $possible = false;
+	    endif;
+	elseif ( $product_id_single_page ) :
+        $current_product = wc_get_product( $product_id_single_page );
+	    if ( $current_product->is_type( 'variable' ) ) :
+            if ( $product_variation_id && $product_quantity ) :
+                WC()->cart->add_to_cart( $product_id_single_page, $product_quantity, $product_variation_id );
+	        else :
+                $possible = false;
+	        endif;
+	    elseif ( $current_product->is_type( 'simple' ) ) :
+            WC()->cart->add_to_cart( $product_id_single_page, $product_quantity );
+	    endif;
+	elseif ( $product_id ) :
+        WC()->cart->add_to_cart( $product_id );
+	endif;
 	$cart_count = WC()->cart->cart_contents_count;
-	if ( $cart_count ) :
-        wp_send_json_success( $cart_count );
+	$result = array(
+	  'possible' => $possible,
+      'cart_count' => $cart_count
+    );
+	if ( $result ) :
+        wp_send_json_success( $result );
 	else :
         wp_send_json_error();
 	endif;
@@ -682,3 +711,5 @@ function change_output_content_wrapper(){
 }
 
 add_action( 'woocommerce_before_main_content', 'change_output_content_wrapper', 5 );
+
+//remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );

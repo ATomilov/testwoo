@@ -22,8 +22,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
+<div id="myModal" class="modal">
+    <div class="modal-content-container">
+        The product has been added to cart!
+    </div>
+</div>
+
 <?php
-//ob_start();
 	/**
 	 * woocommerce_before_single_product hook.
 	 *
@@ -48,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="summary entry-summary">
+	<div class="summary entry-summary" data-singlePageProductId="<?php the_ID();?>">
 
 		<?php
 			/**
@@ -65,6 +70,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 */
 			do_action( 'woocommerce_single_product_summary' );
 		?>
+        <?php
+        $current_product = wc_get_product( get_the_ID() );
+        if ( $current_product->is_type( 'variable' ) ) :
+        $product_variation = $current_product->get_available_variations();?>
+            <div class="options-and-quantity">
+                <select name="current-product-variations">
+                    <option value="">Choose an option</option>
+                    <?php foreach ( $product_variation as $key => $value ) :
+                        $meta = get_post_meta($value['variation_id'], 'attribute_pa_color', true);
+                        $term = get_term_by('slug', $meta, 'pa_color');?>
+                        <option value="<?php echo $value['attributes']['attribute_pa_color'];?>" data-currentVariationId="<?php echo $value['variation_id'];?>"><?php echo $term->name ." ". $value['price_html'];?></option>
+                    <?php endforeach;?>
+                </select>
+                <input type="number" name="quantity-product" id="current-product-quantity" value="1">
+            </div>
+            <a href="" class="button test-add-to-cart">Add to cart</a>
+        <?php else : ?>
+            <input type="number" name="quantity-product" id="current-product-quantity" value="1">
+            <a href="" class="button test-add-to-cart">Add to cart</a>
+        <?php endif;?>
 	</div><!-- .summary -->
 
 	<?php
@@ -79,7 +104,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 
 </div><!-- #product-<?php the_ID(); ?> -->
-<?php //$out1 = ob_get_contents();
-//ob_end_clean();
-//var_dump($out1);?>
+
 <?php do_action( 'woocommerce_after_single_product' ); ?>
