@@ -691,3 +691,237 @@ Stack trace:
 #8 {main}
   thrown
 
+2018-02-05T08:37:49+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on boolean in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:9
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(709): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-05T13:58:58+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(704): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-05T13:59:02+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(704): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-05T13:59:34+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(704): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-05T14:00:28+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(704): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-05T14:00:43+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(704): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-05T15:28:24+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on boolean in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:9
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(704): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-05T15:29:52+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on boolean in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:9
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(704): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-05T16:04:47+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-10T17:07:16+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-10T17:07:38+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-10T17:07:52+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-10T17:08:06+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-02-10T17:10:07+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-03-08T14:16:35+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-03-08T14:16:39+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-03-08T14:16:45+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+
+2018-03-08T14:17:05+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_attributes() in C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\template-parts\content-product-modal.php:10
+Stack trace:
+#0 C:\OSPanel\domains\testwoo\wp-includes\template.php(690): require()
+#1 C:\OSPanel\domains\testwoo\wp-includes\template.php(647): load_template('C:\\OSPanel\\doma...', false)
+#2 C:\OSPanel\domains\testwoo\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 C:\OSPanel\domains\testwoo\wp-content\themes\twentyseventeen\functions.php(701): get_template_part('./template-part...')
+#4 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(286): ajax_twGetProductContent('')
+#5 C:\OSPanel\domains\testwoo\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\OSPanel\domains\testwoo\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\testwoo\wp-admin\admin-ajax.php(97): do_action('wp_ajax_twGetPr...')
+#8 {main}
+  thrown
+

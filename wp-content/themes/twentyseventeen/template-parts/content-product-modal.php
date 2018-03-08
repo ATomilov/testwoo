@@ -10,7 +10,20 @@ $current_product_attributes = $current_product->get_attributes();
 $variation_attributes =  $current_product->get_variation_attributes();
 $product_variations = $current_product->get_available_variations();
 //var_dump($product_variations);
-$i = 0; ?>
+$i = 0;
+$product_current_options = json_decode( stripslashes($_POST['data_valuesSelectOptions']) );
+foreach ( $product_variations as $key_variation => $value_variation ) :
+        if ( in_array( $product_current_options, $value_variation['attributes'] ) ) :
+            echo $current_product_variation_id = $value_variation['variation_id']."<br>";
+        endif;
+endforeach;
+var_dump($product_current_options);
+//foreach ( $product_variations as $key_variation => $value_variation ) :
+//        if ( in_array( $product_current_options, $value_variation['attributes'] ) ) :
+//            echo $current_product_variation_id = $value_variation['variation_id'];
+//        endif;
+//endforeach;
+?>
 
 
 
@@ -34,7 +47,7 @@ $i = 0; ?>
                 <?php foreach ( $current_product_attributes as $key_attr => $value_attr ) : ?>
                     <?php echo wc_attribute_label( $value_attr['name']) . " "; ?>
                     <?php $attribute_values = get_the_terms( $current_product->get_id(), $value_attr['name'] ); ?>
-                    <select class="available-options-of-product" name="option-of-product-<?php echo ++$i;?>">
+                    <select class="available-options-of-product" id="option-of-product-<?php echo ++$i;?>">
                         <?php foreach ( $attribute_values as $attribute_value ) : ?>
                             <?php foreach ( $product_variations as $key_variation => $value_variation ) : ?>
                                 <?php if ( in_array( $attribute_value->slug, $value_variation['attributes'] ) ) : ?>
@@ -47,8 +60,8 @@ $i = 0; ?>
                         <?php endforeach; ?>
                     </select>
                 <?php endforeach;?>
-                    <?php //var_dump($available_variations_ids);?>
-<!--                <a href="" class="button test-add-to-cart">Add to cart</a>-->
+<!--                    --><?php //var_dump($available_variations_ids);?>
+                <a href="" class="button test-add-to-cart">Add to cart</a>
             <?php endif;?>
         </div>
 

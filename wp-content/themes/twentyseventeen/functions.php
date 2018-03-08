@@ -649,11 +649,20 @@ function ajax_twAddToCart() {
 	$product_id_single_page = intval( $_POST['data_productSinglePageId'] );
 	$product_variation_id = intval( $_POST['data_productVariationId'] );
 	$product_quantity = intval( $_POST['data_quantityCurrentProduct'] );
+	$product_current_options = json_decode( stripslashes($_POST['data_valuesSelectOptions']) );
 	$possible = true;
 	if ( $product_id_quick_show ) :
         $current_product = wc_get_product( $product_id_quick_show );
-	    if ( $current_product->is_type( 'variable' ) && $product_variation_id && $product_quantity) :
-            WC()->cart->add_to_cart( $product_id_quick_show, $product_quantity, $product_variation_id );
+        $product_variations = $current_product->get_available_variations();
+	    if ( $current_product->is_type( 'variable' ) ) :
+            foreach ( $product_variations as $key_variation => $value_variation ) :
+                foreach ( $product_current_options as $product_current_option ) :
+                    if ( in_array( $product_current_option, $value_variation['attributes'] ) ) :
+                        $current_product_variation_id = $value_variation['variation_id'];
+	                endif;
+	            endforeach;
+            endforeach;
+            WC()->cart->add_to_cart( $product_id_quick_show, $product_quantity, $current_product_variation_id );
 	    else :
             $possible = false;
 	    endif;
@@ -674,7 +683,8 @@ function ajax_twAddToCart() {
 	$cart_count = WC()->cart->cart_contents_count;
 	$result = array(
 	  'possible' => $possible,
-      'cart_count' => $cart_count
+      'cart_count' => $cart_count,
+      'options' => $product_current_options
     );
 	if ( $result ) :
         wp_send_json_success( $result );

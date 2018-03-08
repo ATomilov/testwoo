@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    var options = [];
+    var options = {};
     $('img.product-image-on-shop').mouseover(function () {
         var $this = $(this);
         var newSource = $this.attr('data-alt-src');
@@ -19,6 +19,7 @@ jQuery(document).ready(function($) {
         var data_productVariationSelector = $(this).parent().find('select[name=current-product-variations]');
         var data_productVariationId = $('option:selected', data_productVariationSelector).attr('data-currentVariationId');
         var data_quantityCurrentProduct = $(this).parent().find('#current-product-quantity').val();
+        // console.log(JSON.stringify(options));
         // console.log(data_productVariationId);
         // alert(data_quantityCurrentProduct);
         $.ajax({
@@ -30,7 +31,8 @@ jQuery(document).ready(function($) {
                 data_productQuickShowid: data_productQuickShowid,
                 data_productSinglePageId: data_productSinglePageId,
                 data_productVariationId: data_productVariationId,
-                data_quantityCurrentProduct: data_quantityCurrentProduct
+                data_quantityCurrentProduct: data_quantityCurrentProduct,
+                data_valuesSelectOptions: JSON.stringify(options)
             },
             success: function(response) {
                 if ( response['data']['possible'] ) {
@@ -48,13 +50,23 @@ jQuery(document).ready(function($) {
         });
     });
     $('body').on('click', '.product-image-on-shop', function () {
+        setTimeout(function () {
+            $('.available-options-of-product').each(function () {
+                options[$(this).attr('id')] = $(this).val();
+            });
+            // console.log(JSON.stringify(options));
+            // console.log(options);
+        }, 1500);
+        // console.log( options );
+
         var data_productid = $(this).closest('li.product').data('productid');
         $.ajax({
             url: twAjaxAddToCart.ajaxurl,
             method: 'post',
             data: {
                 action: 'twGetProductContent',
-                data_productid: data_productid
+                data_productid: data_productid,
+                data_valuesSelectOptions: JSON.stringify(options)
             },
             success: function(response) {
                 if ( response['success'] ) {
@@ -94,8 +106,8 @@ jQuery(document).ready(function($) {
     //     }
     // });
     $('body').on('change', '.available-options-of-product', function () {
-       alert(this.value);
-       // alert($('.available-options-of-product').length);
+        options[$(this).attr('id')] = $(this).val();
+        // console.log(options);
     });
 });
 
